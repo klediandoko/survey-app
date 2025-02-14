@@ -1,5 +1,7 @@
 package com.survey;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.*;
 
 public class Survey {
@@ -145,4 +147,21 @@ public class Survey {
         return true;
 
     }
+
+    public boolean validateFields() {
+        if (StringUtils.isBlank(title)) {
+            System.out.println("Titulli nuk mund te jete Bosh");
+            return false;
+        }
+        if (StringUtils.isBlank(topic)) {
+            System.out.println("Tema nuk mund jete bosh");
+            return false;
+        }
+        if (StringUtils.isBlank(description)) {
+            System.out.println("Description nuk mund te jete bosh.");
+            return false;
+        }
+        return true;
+    }
+
 }

@@ -4,11 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-       /* Survey survey = new Survey("Test0", "Test zero", "test");
+        Survey survey = new Survey("", "Test zero", "test");
+        if (!survey.validateFields()) {
+            System.out.println("Shtoni te dhenat e munguara");
+        } else {
+            System.out.println("Survey OK!");
+        }
 
-        Candidate candidate1 = new Candidate("Kledi", "Doko", "dkdkdkdk", "1456465");
+        /* Candidate candidate1 = new Candidate("Kledi", "Doko", "dkdkdkdk", "1456465");
         Candidate candidate2 = new Candidate("Kledi", "Doko", "dkdkdkdk", "1456465");
-       *//* survey.addCandidate(candidate1);
+       // survey.addCandidate(candidate1);
         survey.addCandidate(candidate2);*//*
 
         Question question1 = new Question("Si eshte koha sot?");
@@ -42,7 +47,7 @@ public class Main {
     }*/
 
 
-
+/*
                 // Create survey
                 Survey survey = new Survey("Test2", "test", "test all functions");
 
@@ -80,10 +85,10 @@ public class Main {
                 // Add responses for the candidates
                 survey.addResponse(candidate1, answer1);
                 survey.addResponse(candidate2, answer2);
-                survey.addResponse(candidate3, answer3);
+                survey.addResponse(candidate3, answer3);*/
 
-                // survey result
-              //  survey.printSurveyResults();
+        // survey result
+        //  survey.printSurveyResults();
 
           /*  // frequent answer
                 AnswerOption mostFrequentAnswer = survey.findMostGivenAnswer(question1);
@@ -103,11 +108,11 @@ public class Main {
                 Candidate mostAnsweredCandidate = survey.mostAnswersCandidate();
                 System.out.println("Most active candidate: " + mostAnsweredCandidate.getFirstName() + " " + mostAnsweredCandidate.getLastName());
 */
-        survey.addQuestion(question1);
-        System.out.println("Validity: " + survey.isValid());
+        /*survey.addQuestion(question1);
+        System.out.println("Validity: " + survey.isValid());*/
 
-            }
-        }
+    }
+}
 
 
 
